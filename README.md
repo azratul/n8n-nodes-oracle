@@ -17,7 +17,7 @@ This package provides nodes for [`n8n`](https://github.com/n8n-io/n8n) to work w
 ### In a local NPM installation
 
 ```bash
-npm i n8n-nodes-oracle
+npm i azratul/n8n-nodes-oracle
 ```
 
 The nodes should be automatically discovered by `n8n`.
@@ -25,7 +25,7 @@ The nodes should be automatically discovered by `n8n`.
 ### In a global installation
 
 ```bash
-npm i -g n8n-nodes-oracle
+npm i -g azratul/n8n-nodes-oracle
 ```
 
 You should then set the `N8N_CUSTOM_EXTENSIONS` variable to the path of the modules, e.g. on Ubuntu:
@@ -43,7 +43,7 @@ FROM n8nio/n8n
 
 USER root
 
-RUN npm_config_user=root npm install -g n8n-nodes-oracle
+RUN npm_config_user=root npm install -g azratul/n8n-nodes-oracle
 
 ENV N8N_CUSTOM_EXTENSIONS "/usr/local/lib/node_modules/n8n-nodes-oracle"
 
